@@ -16,7 +16,7 @@ lvim.format_on_save = {
   timeout = 1000,
 }
 -- to disable icons and use a minimalist setup, uncomment the following
--- lvim.use_icons = false
+lvim.use_icons = true
 
 -- keymappings <https://www.lunarvim.org/docs/configuration/keybindings>
 lvim.leader = "space"
@@ -31,7 +31,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
--- lvim.colorscheme = "lunar"
+lvim.colorscheme = "catppuccin-mocha"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -98,6 +98,10 @@ lvim.plugins = {
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
   },
   {
     "gpanders/nvim-parinfer"
